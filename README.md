@@ -24,7 +24,7 @@ Technologies Used -- To be updated
 
 Installation
 1. Clone the repository:
-   git clone https://github.com/your/repository.git
+   git clone https://github.com/Tharunaditya/coapps_project_HR_mgmt_system.git
 2. Navigate to the project directory:
    cd HR-Management-System
 3. Install dependencies:
