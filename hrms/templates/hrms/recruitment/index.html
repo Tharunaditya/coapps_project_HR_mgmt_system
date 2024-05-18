@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="{% static 'hrms/vendors/iconfonts/mdi/css/materialdesignicons.min.css' %}">
+  <link rel="stylesheet" href="{% static 'hrms/vendors/iconfonts/font-awesome/css/font-awesome.css' %}">
+  <link rel="stylesheet" href="{% static 'hrms/css/toastr.min.css' %}">
+  <link rel="shortcut icon" href="{% static 'hrms/images/favicon.jpeg' %}" />
+  <title>Recruitment Page</title>
+  <style>
+    body, .main-panel, .content-wrapper, .sidebar, .navbar, .footer {
+      background-color: black;
+      color: white;
+    }
+    .navbar {
+      background-color: #333333; /* Dark gray color for the navbar */
+    }
+    .card {
+      background-color: #333;
+      border: 1px solid #444;
+    }
+    .card .card-body {
+      background-color: #333;
+      color: white;
+    }
+    .form-group label {
+      color: white;
+    }
+    .form-group input[type="text"],
+    .form-group input[type="email"] {
+      background-color: #555;
+      color: white;
+      border: 1px solid #666;
+    }
+    .form-group input[type="text"]:focus,
+    .form-group input[type="email"]:focus {
+      background-color: #666;
+      color: white;
+    }
+    .form-group input[type="submit"] {
+      background-color: #28a745;
+      color: white;
+      border: 1px solid #28a745;
+    }
+    .form-group input[type="submit"]:hover {
+      background-color: #218838;
+      border: 1px solid #218838;
+    }
+  </style>
+</head>
+<body>
+ {% include "hrms/home/navbar.html" %}<br>
+  <section class="container">
+    <div class="row mt-5">
+      <div class="col-lg-8 offset-lg-2"><br>
+        <br>
+        <div class="text-center mb-2">
+          <img src="{% static 'hrms/images/logo1.png' %}" height="50px" width="120px" alt="">
+        </div>
+        <p class="text-black text-center">Candidate Application Form</p><hr>
+        <div class="card">
+          <div class="card-body">
+            <form action="" method="POST" class="form-group">
+              {% csrf_token %}
+              {{form.as_p}}
+              <div>
+                <button class="btn btn-block btn-success">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </section>
+</body>
+</html>

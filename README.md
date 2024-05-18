@@ -11,12 +11,10 @@ Features
 - Leave and Attendance Tracking
 - Payroll Processing
 - Recruitment and Onboarding
-- Training and Development
-- HR Analytics
 
 Technologies Used -- To be updated
 - Python
-- Flask (Backend)
+- django (Backend)
 - HTML, CSS, JavaScript (Frontend)
 - SQLAlchemy (Database ORM)
 - Bootstrap (UI Framework)
@@ -35,7 +33,7 @@ Usage
    python manage.py db upgrade
 2. Start the Flask development server:
    python manage.py runserver
-3. Access the application in your web browser at http://localhost:5000
+3. Access the application in your web browser at http://localhost:8000
 
 Contribution
 Contributions are welcome! Please follow the contribution guidelines (CONTRIBUTING.md).
