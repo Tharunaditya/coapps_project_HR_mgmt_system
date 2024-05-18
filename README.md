@@ -36,7 +36,7 @@ Usage
 3. Access the application in your web browser at http://localhost:8000
 
 Requirements
-For a detailed list of dependencies and their versions, please refer to the [REQUIREMENTS.md]() file.
+For a detailed list of dependencies and their versions, please refer to the [REQUIREMENTS.md](https://github.com/Tharunaditya/coapps_project_HR_mgmt_system/blob/main/REQUIREMENTS.md) file.
 
 Contribution
 Contributions are welcome! Please follow the contribution guidelines (CONTRIBUTING.md).
